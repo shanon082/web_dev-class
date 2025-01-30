@@ -11,43 +11,75 @@
 
 <body>
     <div class="container-sm">
-        <form action="includes/form_processing.php" method="post">
-            <label for="first name">First Name</label>
-            <input type="text" name="fname" placeholder="Enter first name">
+        <form action="includes/form_processing.php" method="post" class="was-validated">
+            <div class="mt-2 mb-2">
+                <label for="first name" class="form-label">First Name</label>
+                <input type="text" name="fname" placeholder="Enter first name" class="form-control" required>
+                <div class="valid-feedback">Valid</div>
+                <div class="invalid-feedback">No Input</div>
+            </div>
 
-            <label for="last name">Last Name</label>
-            <input type="text" name="lname" placeholder="Enter last name">
+            <div class="mt-2 mb-2">
+                <label for="last name" class="form-label">Last Name</label>
+                <input type="text" name="lname" class="form-control" placeholder="Enter last name" required>
+                <div class="valid-feedback">Valid</div>
+                <div class="invalid-feedback">No Input</div>
+            </div>
 
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Enter email">
+            <div class="mt-2 mb-2">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+                <div class="valid-feedback">Valid</div>
+                <div class="invalid-feedback">No Input</div>
+            </div>
 
-            <label for="gender">Gender:</label>
-            <input type="radio" name="male" id="male">
-            <label for="male">Male</label>
-            <input type="radio" name="male" id="male">
-            <label for="female">Female</label>
+            <div class="form-check mt-2 mb-2">
+                <label for="gender" class="form-check-label">Gender:</label>
+                <div class="form-check">
+                    <label for="male"> Male</label>
+                    <input type="radio" class="form-check-input" name="gender" id="gender">
+                </div>
+                <div class="form-check">
+                    <label for="female"> Female</label>
+                    <input type="radio" class="form-check-input" name="gender" id="gender">
+                </div>
+            </div>
 
-            <label for="campus">University</label>
-            <select name="university" id="university">
-                <option value="soroti" selected>soroti</option>
-                <option value="makerere">makerere</option>
-                <option value="ndejje">ndejje</option>
-                <option value="none">none</option>
-            </select>
+            <div class="mt-2 mb-2">
+                <label for="campus" class="form-label">University</label>
+                <select name="university" id="university" class="form-select">
+                    <option value="soroti" selected>soroti</option>
+                    <option value="makerere">makerere</option>
+                    <option value="ndejje">ndejje</option>
+                    <option value="none">none</option>
+                </select>
+            </div>
 
-            <label for="skills you know">Your skills</label>
-            <input type="checkbox" name="skills" id="">
-            <label for="">Front-End development</label>
-            <input type="checkbox" name="skills" id="">
-            <label for="">Back-End development</label>
-            <input type="checkbox" name="skills" id="">
-            <label for="">Machine learning</label>
-            <input type="checkbox" name="skills" id="">
-            <label for="">Data Science</label>
-            <input type="checkbox" name="skills" id="">
-            <label for="">Data analyst</label>
+            <div class="form-check mt-2 mb-2">
+                <label for="skills" class="form-check-label">Your skills</label>
+                <div class="form-check">
+                    <label for="" class="form-check-label"> Front-End development</label>
+                    <input type="checkbox" name="skills" id="" class="form-check-input">
+                </div>
+                <div class="form-check">
+                    <label for="" class="form-check-label"> Back-End development</label>
+                    <input type="checkbox" name="skills" id="" class="form-check-input">
+                </div>
+                <div class="form-check">
+                    <label for="" class="form-check-label"> Machine learning</label>
+                    <input type="checkbox" name="skills" id="" class="form-check-input">
+                </div>
+                <div class="form-check">
+                    <label for="" class="form-check-label"> Data Science</label>
+                    <input type="checkbox" name="skills" id="" class="form-check-input">
+                </div>
+                <div class="form-check">
+                    <label for="" class="form-check-label"> Data analyst</label>
+                    <input type="checkbox" name="skills" id="" class="form-check-input">
+                </div>
+            </div>
 
-            <button type="submit">Submit</button>
+            <button type="submit" class="btn btn-outline-primary mt-4">Submit</button>
 
         </form>
     </div>
