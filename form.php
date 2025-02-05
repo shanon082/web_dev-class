@@ -12,28 +12,29 @@
 <body>
     <div class="container-sm">
         <form action="includes/form_processing.php" method="post" class="was-validated">
-            <div class="mt-2 mb-2">
+            <div class="h1 text-uppercase text-primary text-center">Sample form</div>
+            <div class="mt-2 mb-1">
                 <label for="first name" class="form-label">First Name</label>
                 <input type="text" name="fname" placeholder="Enter first name" class="form-control" required>
                 <div class="valid-feedback">Valid</div>
                 <div class="invalid-feedback">No Input</div>
             </div>
 
-            <div class="mt-2 mb-2">
+            <div class="mt-1 mb-1">
                 <label for="last name" class="form-label">Last Name</label>
                 <input type="text" name="lname" class="form-control" placeholder="Enter last name" required>
                 <div class="valid-feedback">Valid</div>
                 <div class="invalid-feedback">No Input</div>
             </div>
 
-            <div class="mt-2 mb-2">
+            <div class="mt-1 mb-1">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" name="email" class="form-control" placeholder="Enter email" required>
                 <div class="valid-feedback">Valid</div>
                 <div class="invalid-feedback">No Input</div>
             </div>
 
-            <div class="form-check mt-2 mb-2">
+            <div class="form-check mt-1 mb-1">
                 <label for="gender" class="form-check-label">Gender:</label>
                 <div class="form-check">
                     <label for="male"> Male</label>
@@ -45,7 +46,7 @@
                 </div>
             </div>
 
-            <div class="mt-2 mb-2">
+            <div class="mt-1 mb-1">
                 <label for="campus" class="form-label">University</label>
                 <select name="university" id="university" class="form-select">
                     <option value="soroti" selected>soroti</option>
@@ -55,7 +56,7 @@
                 </select>
             </div>
 
-            <div class="form-check mt-2 mb-2">
+            <div class="form-check mt-1 mb-1">
                 <label for="skills" class="form-check-label">Your skills</label>
                 <div class="form-check">
                     <label for="" class="form-check-label"> Front-End development</label>
