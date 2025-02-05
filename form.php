@@ -37,11 +37,11 @@
                 <label for="gender" class="form-check-label">Gender:</label>
                 <div class="form-check">
                     <label for="male"> Male</label>
-                    <input type="radio" class="form-check-input" name="gender" id="gender">
+                    <input type="radio" class="form-check-input" name="gender" id="gender" value="male">
                 </div>
                 <div class="form-check">
                     <label for="female"> Female</label>
-                    <input type="radio" class="form-check-input" name="gender" id="gender">
+                    <input type="radio" class="form-check-input" name="gender" id="gender" value="female">
                 </div>
             </div>
 
@@ -59,23 +59,23 @@
                 <label for="skills" class="form-check-label">Your skills</label>
                 <div class="form-check">
                     <label for="" class="form-check-label"> Front-End development</label>
-                    <input type="checkbox" name="skills" id="" class="form-check-input">
+                    <input type="checkbox" name="skills[]" id="" class="form-check-input" value="Front-End development">
                 </div>
                 <div class="form-check">
                     <label for="" class="form-check-label"> Back-End development</label>
-                    <input type="checkbox" name="skills" id="" class="form-check-input">
+                    <input type="checkbox" name="skills[]" id="" class="form-check-input" value="Back-end development">
                 </div>
                 <div class="form-check">
                     <label for="" class="form-check-label"> Machine learning</label>
-                    <input type="checkbox" name="skills" id="" class="form-check-input">
+                    <input type="checkbox" name="skills[]" id="" class="form-check-input" value = "machine learning">
                 </div>
                 <div class="form-check">
                     <label for="" class="form-check-label"> Data Science</label>
-                    <input type="checkbox" name="skills" id="" class="form-check-input">
+                    <input type="checkbox" name="skills[]" id="" class="form-check-input" value="data science">
                 </div>
                 <div class="form-check">
                     <label for="" class="form-check-label"> Data analyst</label>
-                    <input type="checkbox" name="skills" id="" class="form-check-input">
+                    <input type="checkbox" name="skills[]" id="" class="form-check-input" value="data analyst">
                 </div>
             </div>
 
