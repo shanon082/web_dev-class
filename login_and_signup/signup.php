@@ -10,7 +10,7 @@
     <div class="wrapper">
         <form action="signup_processing.php" method="post">
             <h1>Create Your Account</h1>
-            <div class="name">
+            <div class="username">
                 <label for="username">Username:</label>
                 <input type="text" placeholder="Username" name="username" required>
             </div>
