@@ -11,7 +11,7 @@
 
 <body>
     <div class="container-sm">
-        <form action="includes/form_processing.php" method="post" class="was-validated">
+        <form action="includes/form_processing.php" method="post" class="was-validated p-3">
             <div class="h1 text-uppercase text-primary text-center">Sample form</div>
             <div class="mt-2 mb-1">
                 <label for="first name" class="form-label">First Name</label>
