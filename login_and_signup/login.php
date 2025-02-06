@@ -1,9 +1,13 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div class="wrapper">
@@ -20,6 +24,14 @@
             <div class="links">
                 <a href="signup.php">New User</a>
                 <a href="">Forgot password</a>
+            </div>
+            <div class="error_msg">
+                <?php 
+                if(isset($_SESSION["error"])){
+                    echo $_SESSION["error"];
+                    unset($_SESSION["error"]);
+                }
+                ?>
             </div>
             <button type="submit">Login</button>
         </form>
