@@ -13,9 +13,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $result = mysqli_query($conn,$sql);
     $row = mysqli_num_rows($result);
 
-    if($row == 1){
+    if($row > 0){
         // echo "login successfully";
-        $_SESSION['user'] = $user['username'];
+        // $_SESSION['username'] = $userdetails['username'];
         header("Location: Welcome.php");
     }else{
         // echo "failed:" .$conn ->error;

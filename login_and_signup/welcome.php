@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-if(!isset($_SESSION['user'])){
-header("location: login.php");
-die();
-}
-$user = $_SESSION['username'];
+// if(!isset($_SESSION['username'])){
+// header("location: login.php");
+// exit();
+//}
+// $user = $_SESSION['username'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,6 +15,6 @@ $user = $_SESSION['username'];
     <title>Dashboard</title>
 </head>
 <body>
-    <h1>Welcome <?php echo $user; ?></h1>
+    <h1>Welcome</h1>
 </body>
 </html>
