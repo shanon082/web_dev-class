@@ -17,11 +17,16 @@
             <label for="email">Email</label>
             <input type="email" placeholder="Enter your email" name="email" required>
         </div>
+        <div class="phone">
+            <label for="tel">Telephone</label>
+            <input type="tel" name="telephone" id="" placeholder="e.g 0786536821" required>
+        </div>
         <div class="password">
             <label for="password">Password</label>
             <input type="password" name="password" placeholder="Enter your password" required>
         </div>
         <button type="submit">SignUp</button>
+        <a href="update_delete_form.php">Update/delete</a>
     </form>
 </body>
 </html>
