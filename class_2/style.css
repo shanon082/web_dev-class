@@ -19,3 +19,7 @@ form{
     display: block;
     margin: 2px;
 }
+a{
+    display: block;
+    text-decoration: none;
+}
